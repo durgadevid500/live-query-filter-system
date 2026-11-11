@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Query Filter System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Product Explorer</h1>
+        <p>Search, filter and discover products instantly</p>
+    </header>
+
+    <main class="container">
+
+        <section class="search-section">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+            </select>
+        </section>
+
+        <p id="resultCount">Loading products...</p>
+
+        <section id="productContainer" class="product-grid"></section>
+
+        <div id="loading" class="loading hidden">
+            Loading products...
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Live Query Filter System | Built with Node.js & Express</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
